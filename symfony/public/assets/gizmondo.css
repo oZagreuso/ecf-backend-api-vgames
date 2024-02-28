@@ -1,0 +1,21 @@
+:root {
+    --bg: #111111;
+    --txt: #33CC00;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body > header {
+    background-color: #111111;
+}
