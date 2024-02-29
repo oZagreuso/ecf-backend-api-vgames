@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gizmondo published Games</title>
+    <link rel="stylesheet" href="./assets/gizmondo.css">
+    <script src="./assets/vue.global.js"></script>
+    <script src="./assets/vueGizmondo.js" type="module"></script>
+</head>
+<body>
+    <header>
+        <h1>Gizmondo Games</h1>
+    </header>
+    <main id="gizmondo">
+        <aside class="oneNum">
+            {{ nbGames }} Gizmondo games registered.
+        </aside>
+        <article class="oneGame" v-for="game of gameList">
+            <h2>{{ game.game }}</h2>
+            <ul class="oneGameInfo">
+                <li><span>Published Year:</span> {{ game.year }}</li>
+                <li><span>Publisher:</span> {{ game.publisher }}</li>
+                <li><span>Developer(s):</span> {{ game.dev }}</li>
+            </ul>
+        </article>
+    </main>
+</body>
+</html>
