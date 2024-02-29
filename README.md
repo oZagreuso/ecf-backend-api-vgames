@@ -18,3 +18,17 @@ La Gizmondo est une console de jeux vidéo portable faisant également office d'
 - Dimensions : 138 × 82 × 32 mm
 - Poids : 150g
 - Autres : bluetooth 2, lecteur MP3, système de localisation GPS, lecteur de cartes mémoire SD, SMS/MMS, appareil photo numérique.
+
+## Travail à réaliser.
+
+Dans le dossier public, vous trouverez une page web `gizmondo.html` qui liste les jeux de la console Gizmondo.
+
+Votre travail consiste à créer les entités de l'API qui permet de faire fonctionner la page web.
+
+Vous ne devez, en aucun cas, modifier le code HTML, CSS ou JS présent dans le dossier `public`. Toute modification de ce code sera éliminatoire !
+
+2 entités sont attendues : 
+- Gizmondo
+- Publisher
+
+Les données du jeu d'essai sont disponibles sous forme d'insertions SQL dans le répertoire `_docs` du projet.

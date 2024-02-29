@@ -6,17 +6,24 @@
     <title>Gizmondo published Games</title>
     <link rel="stylesheet" href="./assets/gizmondo.css">
     <script src="./assets/vue.global.js"></script>
-    <script src="./assets/vuePays.js" type="module"></script>
+    <script src="./assets/vueGizmondo.js" type="module"></script>
 </head>
 <body>
     <header>
-        <h1></h1>
+        <h1>Gizmondo Games</h1>
     </header>
-    <main>
-
+    <main id="gizmondo">
+        <aside class="oneNum">
+            {{ nbGames }} Gizmondo games registered.
+        </aside>
+        <article class="oneGame" v-for="game of gameList">
+            <h2>{{ game.game }}</h2>
+            <ul class="oneGameInfo">
+                <li><span>Published Year:</span> {{ game.year }}</li>
+                <li><span>Publisher:</span> {{ game.publisher }}</li>
+                <li><span>Developer(s):</span> {{ game.dev }}</li>
+            </ul>
+        </article>
     </main>
-    <footer>
-        {{ nbGames }} Gizmondo games registered.
-    </footer>
 </body>
 </html>

@@ -1,8 +1,3 @@
-:root {
-    --bg: #111111;
-    --txt: #33CC00;
-}
-
 * {
     box-sizing: border-box;
 }
@@ -14,8 +9,51 @@ html {
 body {
     font-size: 1.6rem;
     font-family: 'Courier New', Courier, monospace;
+    background-color: #111111;
+    color: #55EE00;
 }
 
 body > header {
+    color: #CCCC00;
+}
+
+.oneNum {
+    padding: 2rem;
+    font-weight: bold;
+}
+
+.oneGame {
+    background-color: #555555;
+    box-shadow: 0 0 1rem 0 #AAAAAA;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+}
+
+.oneGame h2 {
+    color: #CCCC00;
+    margin: 0;
+    padding: 1rem;
+    background-color: #333333;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;;
+}
+
+.oneGameInfo {
+    margin: 1rem;
+    padding: 0 0 1rem 0;
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.oneGameInfo li {
+    padding: 1rem;
     background-color: #111111;
+    border-radius: 1rem;
+}
+
+.oneGameInfo span {
+    color: #00FFCC;
+    display: inline-block;
+    padding-left: 1rem;
 }
